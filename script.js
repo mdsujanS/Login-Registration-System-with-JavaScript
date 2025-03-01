@@ -18,19 +18,19 @@ function register(){
     let Pass = document.getElementById('registerPass').value;
 
     if(!Name){
-        alert('Please Enter your Full Name.');
+        alert('Name field Required');
         return;
     }
     else if(!UserName){
-        alert('User name is Required!');
+        alert('User field Required!');
         return;
     }
     else if(!Email){
-        alert('Please Enter your Email.');
+        alert('Email field required!');
         return;
     }
     else if(!Pass){
-        alert('Please Enter your password.');
+        alert('Password field required!');
         return;
     }
 
@@ -42,7 +42,7 @@ function register(){
     }
 
     localStorage.setItem(Email, JSON.stringify(user_data));
-    alert('Registation Is Complite..');
+    alert('Registation is Complite..');
     
     document.getElementById('registerName').value='';
     document.getElementById('RegisterUserName').value='';
@@ -58,11 +58,11 @@ function login(){
 
     
     if (!logEmail){
-        alert('Please Enter Your Email');
+        alert('Email fild required!');
         return;
     }
     else if(!logPass){
-        alert('Please enter Your Password');
+        alert('Password fild required!');
         return;
     }
     
